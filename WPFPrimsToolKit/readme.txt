@@ -1,3 +1,7 @@
+*** 24/05/2019
+c'est un peu le bordel je ne sais pas trop dire si je travaille avec Prism ou les autres MvvM Framework
+c'est donc plus didactic qu'opérationnel 
+
 *** 21/02/2017
 J'essaye de travaillé sur un exemple "static"
 
