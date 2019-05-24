@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WPFPrimsToolKit.Views.RetryPolicyView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" 
+             d:DesignWidth="320"
+             MinWidth="550"
+             MinHeight="320"
+             >
+    <Grid Height="320">
+        <Rectangle Height="72" HorizontalAlignment="Left" Margin="12,64,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="156" />
+        <Button Content="Try1" Name="buttonTry1" Height="23" HorizontalAlignment="Left" Margin="12,20,0,0" VerticalAlignment="Top" Width="75" Command="{Binding SimpleCommand}" Click="buttonTry1_Click" />
+        <TextBox Height="267" HorizontalAlignment="Left" Margin="186,21,0,0" Name="textBoxText" VerticalAlignment="Top" Width="331" 
+                 Text="{Binding TextBoxText}" VerticalScrollBarVisibility="Auto" TextChanged="textBoxText_TextChanged" />
+        <Button Content="Retry" Height="23" HorizontalAlignment="Left" Margin="12,156,0,0" Name="buttonRetry" VerticalAlignment="Top" Width="75" Click="buttonRetry_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="22,96,0,0" Name="textBoxNbRetry" VerticalAlignment="Top" Width="40" Text="5" />
+        <CheckBox Foreground="{Binding LastUsedBrush}" IsChecked="True" Content=" On Error" Height="21" HorizontalAlignment="Left" Margin="22,73,0,0" Name="checkBoxOnError" VerticalAlignment="Top" Width="89"/>
+        <Button Content="WaitAndRetry" Height="23" HorizontalAlignment="Left" Margin="12,206,0,0" Name="buttonWandR" VerticalAlignment="Top" Width="99" Click="buttonWandR_Click" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPrimsToolKit", "WPFPrismToolKit\WPFPrimsToolKit.csproj", "{52BE5E9D-FE4B-4B3D-B491-87DA420AE70C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A528154A-5D5B-4995-8CEB-DA6BBE8AA9B9}"
+	ProjectSection(SolutionItems) = preProject
+		readme.txt = readme.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefContrib.Integration.Unity", "MefContrib.Integration.Unity\MefContrib.Integration.Unity.csproj", "{260B727C-DC12-4C4B-ABBB-5B3324094CD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmFramework", "MvvmFramework\MvvmFramework.csproj", "{0DAC46FB-B56B-41EA-B1B3-62565CCF923D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{C04AEB81-9EA7-4147-9418-B16A68305E67}"
+	ProjectSection(SolutionItems) = preProject
+		Assemblies\log4net.dll = Assemblies\log4net.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52BE5E9D-FE4B-4B3D-B491-87DA420AE70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BE5E9D-FE4B-4B3D-B491-87DA420AE70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BE5E9D-FE4B-4B3D-B491-87DA420AE70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BE5E9D-FE4B-4B3D-B491-87DA420AE70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{260B727C-DC12-4C4B-ABBB-5B3324094CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260B727C-DC12-4C4B-ABBB-5B3324094CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260B727C-DC12-4C4B-ABBB-5B3324094CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260B727C-DC12-4C4B-ABBB-5B3324094CD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DAC46FB-B56B-41EA-B1B3-62565CCF923D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DAC46FB-B56B-41EA-B1B3-62565CCF923D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DAC46FB-B56B-41EA-B1B3-62565CCF923D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DAC46FB-B56B-41EA-B1B3-62565CCF923D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://bruno-raby.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MefContrib.Integration.Unity\\MefContrib.Integration.Unity.csproj
+		SccProjectName1 = MefContrib.Integration.Unity
+		SccLocalPath1 = MefContrib.Integration.Unity
+		SccProjectUniqueName2 = MvvmFramework\\MvvmFramework.csproj
+		SccProjectName2 = MvvmFramework
+		SccLocalPath2 = MvvmFramework
+		SccProjectUniqueName3 = WPFPrismToolKit\\WPFPrimsToolKit.csproj
+		SccProjectName3 = WPFPrismToolKit
+		SccLocalPath3 = WPFPrismToolKit
+	EndGlobalSection
+EndGlobal

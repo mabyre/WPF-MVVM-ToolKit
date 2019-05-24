@@ -1,0 +1,66 @@
+﻿<Window x:Class="WPFPrimsToolKit.ShellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
+        mc:Ignorable="d"
+        d:DesignHeight="300" d:DesignWidth="300"
+        SizeToContent="WidthAndHeight"
+        Title="ShellWindow">
+
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="290*" />
+            <RowDefinition Height="20*" />
+        </Grid.RowDefinitions>
+        
+        <DockPanel LastChildFill="false">
+        
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="E_xit" Click="MenuItemExit_Click"/>
+                </MenuItem>
+                <MenuItem Header="_Exit" Click="MenuItemExit_Click"/>
+                <MenuItem Header="HelloWorld" Click="MenuItemHelloWorld_Click" />
+            </Menu>
+
+            <!-- Choosing User Control to load in ContentControlMain -->
+            <TreeView x:Name="TreeViewMain" DockPanel.Dock="Left" 
+                      Margin="3" 
+                      Width="163"
+                      SelectedItemChanged="TreeView_SelectedItemChanged">
+                <TreeViewItem Header="StaticSample"/>
+                <TreeViewItem Header="RetryPolicy"/>
+                <TreeViewItem Header="DataTemplateAndTriggers"/>
+                <TreeViewItem Header="InvokeCommandAction"/>
+                <TreeViewItem Header="HelloWorld"/>
+                <TreeViewItem Header="TreeView1">
+                    <TreeViewItem Header="TreeView2"/>
+                </TreeViewItem>
+            </TreeView>
+
+            <!--
+              Main Content User Control loaded from TreeView
+              -->
+            <ContentControl x:Name="ContentControlMain" 
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Margin="5"/>
+            
+        </DockPanel>
+    
+        <StackPanel Grid.Row="1" Margin="0" VerticalAlignment="Bottom">
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBarItem>
+                    Ready
+                </StatusBarItem>
+                <StatusBarItem>
+                    Start
+                </StatusBarItem>
+            </StatusBar>
+        </StackPanel>
+        
+    </Grid>
+
+</Window>

@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="WPFPrimsToolKit.Views.StaticSampleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFPrimsToolKit.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Button x:Name="buttonRun" Content="Run" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="buttonRun_Click"/>
+        <TextBox x:Name="textBoxMessage" HorizontalAlignment="Left" Height="245" Margin="10,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280"/>
+
+    </Grid>
+</UserControl>
