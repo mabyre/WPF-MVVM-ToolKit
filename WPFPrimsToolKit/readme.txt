@@ -1,6 +1,6 @@
 *** 24/05/2019
-it's a bit of a mess I can't really say if I work with Prism or the other MvvM Framework
-it is therefore more didactic than operational
+It's a bit of a mess I can't really say if I work with Prism or the other MvvM Framework
+It is therefore more didactic than operational
 
 *** 21/02/2017
 I try to work on an example "static"
