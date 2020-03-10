@@ -1,42 +1,42 @@
 *** 24/05/2019
-c'est un peu le bordel je ne sais pas trop dire si je travaille avec Prism ou les autres MvvM Framework
-c'est donc plus didactic qu'opérationnel 
+it's a bit of a mess I can't really say if I work with Prism or the other MvvM Framework
+it is therefore more didactic than operational
 
 *** 21/02/2017
-J'essaye de travaillé sur un exemple "static"
+I try to work on an example "static"
 
-Je me retrouve avec la DLL de Log4Net maquante et je ne souhaite pas le faire gérer par NuGet car ils deviennent véritablement ingérables aussi je créé le répertoire "Assemblies" pour y mettre log4net.dll
+I end up with the missing Log4Net DLL and I don't want it managed by NuGet because they become really unmanageable so I created the "Assemblies" directory to put log4net.dll
 
-*** Packages - Miseà jour - 27/10/2016
+*** Packages - Released - 27/10/2016
 PM> Install-Package Unity -Version 2.1.505.2
 PM> Install-Package Prism -Version 4.0.0
 PM> Install-Package Prism.UnityExtensions -Version 4.1.0
 
 ***
-v0.1 Nettoyage du projet suite à livraison
-WPF Real Time Application donne la possiblité de changer le thème je voudrais le faire aussi ...
-SelectedDataItem me stop, je veux tenter d'utiliser plutot un objet de Prism ...
+v0.1 Project cleaning after delivery
+WPF Real Time Application gives the possibility to change the theme I would like to do it too ...
+SelectedDataItem stop me, I want to try to use a Prism object rather ...
 
-Création du projet FrameworkMvvm renommé par la suite en MvvmFramework
+Creation of the FrameworkMvvm project later renamed to MvvmFramework
 
-Transformation Wpf simple en Prims
-Ajout du bootstrapper de Unity
+Simple Wpf transformation in Prims
+Unity bootstrapper added
 
-***************************
-*** Comment ça marche ? ***
-***************************
-Ajouter un Item dans : WPFPrismToolKit\Shell.xaml
+**********************
+*** How it works ? ***
+**********************
+Add an Item into : WPFPrismToolKit\Shell.xaml
 <TreeView x:Name="TreeViewMain"
 	<TreeViewItem Header="HelloWorld"/>
+	
+Simplest possible interface, add an example as quickly as possible:
+A View and a ViewModel
 
-Interface le plus simple possible, ajouter un exemple le plus rapidement possible :
-Une View et un ViewModel
-
-Ne pas faire dans Shell.xaml :
+Don't do in Shell.xaml :
 <TreeViewItem Header="MySampleView" IsSelected="True"/>
 L'objet n'est pas encore utilisable.
 
-Faire plutôt dans Shell.xaml.cs :
+Better do into Shell.xaml.cs like this :
 protected override void OnSourceInitialized( EventArgs e )
 {
 	ContentControlMain.Content = new HelloWorld();
